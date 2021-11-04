@@ -50,6 +50,6 @@ Print(v)
 
 - Toy Language Evaluation (Execution):
 Our mini interpreter uses three main structures:
-– Execution Stack (ExeStack): a stack of statements to execute the currrent program
-– Table of Symbols (SymTable): a table which keeps the variables values
-– Output (Out): that keeps all the mesages printed by the toy program
+- Execution Stack (ExeStack): a stack of statements to execute the currrent program
+- Table of Symbols (SymTable): a table which keeps the variables values
+- Output (Out): that keeps all the mesages printed by the toy program
