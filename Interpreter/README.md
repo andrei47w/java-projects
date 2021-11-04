@@ -48,7 +48,7 @@ int v;
 If a Then v=2 Else v=3;
 Print(v)
 
-- Toy Language Evaluation (Execution):
+   Toy Language Evaluation (Execution):
 Our mini interpreter uses three main structures:
 - Execution Stack (ExeStack): a stack of statements to execute the currrent program
 - Table of Symbols (SymTable): a table which keeps the variables values
