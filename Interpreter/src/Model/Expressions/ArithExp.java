@@ -1,8 +1,11 @@
 package Model.Expressions;
 
+import Controller.Exceptions.ExpressionException;
 import Controller.Exceptions.InvalidTypeException;
 import Controller.Exceptions.MissingKeyException;
+import Controller.Exceptions.MyException;
 import Model.Containers.IDictionary;
+import Model.Heap;
 import Types.IntType;
 import Values.IValue;
 import Values.IntValue;
@@ -12,7 +15,7 @@ public record ArithExp(ArithOp arithOp,
                        IExp second) implements IExp {
 
     @Override
-    public IValue eval(IDictionary<String, IValue> symbolTable) throws MissingKeyException, InvalidTypeException {
+    public IValue eval(IDictionary<String, IValue> symbolTable) throws MyException, ExpressionException {
         IValue value1 = this.first.eval(symbolTable);
         if (!(value1.getType() instanceof IntType)) {
             throw new InvalidTypeException(value1.getType().getClass(), IntType.class);
@@ -32,6 +35,16 @@ public record ArithExp(ArithOp arithOp,
             case MULTIPLICATION -> new IntValue(number1 * number2);
             case DIVISION -> new IntValue(number1 / number2);
         };
+    }
+
+    @Override
+    public ArithExp deepCopy() {
+        return new ArithExp(this.arithOp, this.first.deepCopy(), this.second.deepCopy());
+    }
+
+    @Override
+    public IValue eval(IDictionary<String, IValue> symbols, Heap heap) throws ExpressionException, MyException {
+        return null;
     }
 
     @Override

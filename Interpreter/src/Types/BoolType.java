@@ -10,6 +10,11 @@ public record BoolType() implements IType {
     }
 
     @Override
+    public BoolType deepCopy() {
+        return new BoolType();
+    }
+
+    @Override
     public boolean equals(Object other) {
         return other instanceof BoolType;
     }

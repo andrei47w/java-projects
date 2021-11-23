@@ -1,9 +1,16 @@
 package Model.Containers;
 
-import java.util.Arrays;
+import java.util.Iterator;
 
 public class Stack<T> implements IStack<T> {
-    private final java.util.Stack<T> innerStack = new java.util.Stack<>();
+    private java.util.Stack<T> innerStack = new java.util.Stack<>();
+
+    public Stack() {
+    }
+
+    public Stack(java.util.Stack<T> innerStack) {
+        this.innerStack = innerStack;
+    }
 
     @Override
     public T pop() {
@@ -22,6 +29,16 @@ public class Stack<T> implements IStack<T> {
 
     @Override
     public String toString() {
-        return Arrays.toString(this.innerStack.toArray());
+        return this.innerStack.toString();
+    }
+
+    public Iterator<T> iterator() {
+        return this.innerStack.iterator();
+    }
+
+    public Stack<T> deepCopy() {
+        java.util.Stack<T> newStack = new java.util.Stack<T>();
+        newStack.addAll(this.innerStack);
+        return new Stack<T>(newStack);
     }
 }

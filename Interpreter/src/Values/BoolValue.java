@@ -17,6 +17,11 @@ public record BoolValue(boolean value) implements IValue {
     }
 
     @Override
+    public BoolValue deepCopy() {
+        return new BoolValue(this.value);
+    }
+
+    @Override
     public String toString() {
         if (this.value) return "true";
         return "false";

@@ -15,4 +15,10 @@ public interface IList<T> extends Iterable<T> {
 
     @Override
     void forEach(Consumer<? super T> action);
+
+    int size();
+
+    public String toFileString();
+
+    IList<T> deepCopy();
 }

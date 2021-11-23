@@ -8,6 +8,16 @@ public record NopStmt() implements IStmt {
     }
 
     @Override
+    public String toFileString() {
+        return null;
+    }
+
+    @Override
+    public NopStmt deepCopy() {
+        return new NopStmt();
+    }
+
+    @Override
     public String toString() {
         return null;
     }

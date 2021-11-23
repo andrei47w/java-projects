@@ -8,7 +8,14 @@ import java.util.Iterator;
 import java.util.function.Consumer;
 
 public class List<T> implements IList<T> {
-    private final ArrayList<T> innerList = new ArrayList<>();
+    private ArrayList<T> innerList = new ArrayList<>();
+
+    public List() {
+    }
+
+    public List(ArrayList<T> innerList) {
+        this.innerList = innerList;
+    }
 
 
     @Override
@@ -50,7 +57,24 @@ public class List<T> implements IList<T> {
     }
 
     @Override
+    public int size() {
+        return this.innerList.size();
+    }
+
+    @Override
     public String toString() {
         return Arrays.toString(this.innerList.toArray());
+    }
+
+    public String toFileString() {
+        String str = "";
+        for (T t : this.innerList) str += t + "\n";
+
+        return str;
+    }
+
+    @Override
+    public List<T> deepCopy() {
+        return new List<T>((ArrayList<T>) this.innerList.clone());
     }
 }

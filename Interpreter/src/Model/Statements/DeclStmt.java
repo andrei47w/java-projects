@@ -21,4 +21,13 @@ public record DeclStmt(String identifier, IType type) implements IStmt {
     public String toString() {
         return "%s %s".formatted(this.type, this.identifier);
     }
+
+    public String toFileString() {
+        return "%s %s\n".formatted(this.type, this.identifier);
+    }
+
+    @Override
+    public DeclStmt deepCopy(){
+        return new DeclStmt(this.identifier, this.type.deepCopy());
+    }
 }

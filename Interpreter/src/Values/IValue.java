@@ -6,4 +6,6 @@ public interface IValue {
     IType getType();
 
     Object getValue();
+
+    public IValue deepCopy();
 }

@@ -10,6 +10,11 @@ public record IntType() implements IType {
     }
 
     @Override
+    public IntType deepCopy() {
+        return new IntType();
+    }
+
+    @Override
     public boolean equals(Object other) {
         return other instanceof IntType;
     }

@@ -17,6 +17,11 @@ public record IntValue(int value) implements IValue {
     }
 
     @Override
+    public IntValue deepCopy() {
+        return new IntValue(this.value);
+    }
+
+    @Override
     public String toString() {
         return String.valueOf(this.value);
     }

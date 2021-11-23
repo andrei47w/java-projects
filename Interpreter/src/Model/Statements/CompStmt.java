@@ -15,6 +15,15 @@ public record CompStmt(IStmt first,
 
     @Override
     public String toString() {
-        return "[%s; %s]".formatted(this.first, this.second);
+        return "[%s, %s]".formatted(this.first, this.second);
+    }
+
+    public String toFileString() {
+        return "%s%s".formatted(this.second.toFileString(), this.first.toFileString());
+    }
+
+    @Override
+    public CompStmt deepCopy(){
+        return new CompStmt(this.first.deepCopy(), this.second.deepCopy());
     }
 }
