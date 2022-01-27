@@ -1,0 +1,230 @@
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)
+v := 10
+Ref(int) a]
+[int v]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)
+v := 10
+Ref(int) a]
+ID: 0
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)
+v := 10]
+[Ref(int) a]
+ID: 0
+SymTable:
+v --> 0
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)
+v := 10]
+ID: 0
+SymTable:
+a --> Values.RefValue@108c4c35
+v --> 0
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)]
+[v := 10]
+ID: 0
+SymTable:
+a --> Values.RefValue@108c4c35
+v --> 0
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)
+new(a, 22)]
+ID: 0
+SymTable:
+a --> Values.RefValue@108c4c35
+v --> 10
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)]
+[new(a, 22)]
+ID: 0
+SymTable:
+a --> Values.RefValue@108c4c35
+v --> 10
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)
+fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)]
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)]
+[fork(print(v)
+print(heapRead a)
+v := 32
+writeH(a, 30)
+)]
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)
+print(v)]
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+ID: 1
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)]
+[print(v)]
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+[print(heapRead a)]
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+10
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------
+ExeStack:
+ID: 0
+SymTable:
+a --> Values.RefValue@4629104a
+v --> 10
+Out:
+10
+22
+FileTable:
+Heap:
+1 --> 22
+
+--------------------------------------

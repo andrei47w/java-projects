@@ -1,18 +1,26 @@
 package Model.Statements;
 
-import Controller.Exceptions.*;
+import Controller.Exceptions.ExpressionException;
+import Controller.Exceptions.InvalidTypeException;
+import Controller.Exceptions.MyException;
+import Controller.Exceptions.VariableAlreadyDeclaredException;
 import Model.Containers.IDictionary;
 import Model.Expressions.HeapReadExp;
 import Model.Expressions.IExp;
 import Model.PrgState;
+import Types.IType;
 import Types.StringType;
 import Values.IValue;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public record OpenRFileStmt(IExp expression) implements IStmt{
+
     @Override
-    public void exec(PrgState state) throws MyException, IOException, ExpressionException {
+    public PrgState exec(PrgState state) throws MyException, IOException, ExpressionException {
         IDictionary<String, BufferedReader> fileTable = state.getFileTable();
         IValue string;
         if(expression.getClass() == HeapReadExp.class) string = this.expression.eval(state.getSymbolTable(), state.getHeap());
@@ -30,6 +38,8 @@ public record OpenRFileStmt(IExp expression) implements IStmt{
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
         fileTable.add((String) string.getValue(), reader);
+
+        return null;
     }
 
     @Override
@@ -44,5 +54,11 @@ public record OpenRFileStmt(IExp expression) implements IStmt{
     @Override
     public OpenRFileStmt deepCopy() {
         return new OpenRFileStmt(this.expression.deepCopy());
+    }
+
+    @Override
+    public IDictionary<String, IType> typecheck(IDictionary<String, IType> typeEnv) throws MyException {
+        expression.typecheck(typeEnv);
+        return typeEnv;
     }
 }

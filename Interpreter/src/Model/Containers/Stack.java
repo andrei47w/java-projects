@@ -41,4 +41,14 @@ public class Stack<T> implements IStack<T> {
         newStack.addAll(this.innerStack);
         return new Stack<T>(newStack);
     }
+
+    @Override
+    public T top() {
+        return innerStack.peek();
+    }
+
+    @Override
+    public java.util.Stack<T> getStack() {
+        return this.innerStack;
+    }
 }

@@ -1,0 +1,46 @@
+ExeStack:
+[print(v)
+v := 2
+int v]
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+[print(v)
+v := 2]
+[int v]
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+[print(v)
+v := 2]
+SymTable:
+v --> 0
+Out:
+FileTable:
+
+ExeStack:
+[print(v)]
+[v := 2]
+SymTable:
+v --> 0
+Out:
+FileTable:
+
+ExeStack:
+[print(v)]
+SymTable:
+v --> 2
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+v --> 2
+Out:
+2
+FileTable:
+

@@ -34,4 +34,6 @@ public record BoolValue(boolean value) implements IValue {
 
         return value == boolValue.value;
     }
+
+
 }

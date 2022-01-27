@@ -1,0 +1,154 @@
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)
+Ref(Ref(int)) a
+new(v, 20)]
+[Ref(int) v]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)
+Ref(Ref(int)) a
+new(v, 20)]
+ID: 0
+SymTable:
+v --> Values.RefValue@5e5ecf85
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)
+Ref(Ref(int)) a]
+[new(v, 20)]
+ID: 0
+SymTable:
+v --> Values.RefValue@5e5ecf85
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)
+Ref(Ref(int)) a]
+ID: 0
+SymTable:
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)]
+[Ref(Ref(int)) a]
+ID: 0
+SymTable:
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)
+new(a, v)]
+ID: 0
+SymTable:
+a --> Values.RefValue@176fb9ef
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)]
+[new(a, v)]
+ID: 0
+SymTable:
+a --> Values.RefValue@176fb9ef
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)
+new(v, 30)]
+ID: 0
+SymTable:
+a --> Values.RefValue@668bd9f
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+2 --> Values.RefValue@7be50657
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)]
+[new(v, 30)]
+ID: 0
+SymTable:
+a --> Values.RefValue@668bd9f
+v --> Values.RefValue@7be50657
+Out:
+FileTable:
+Heap:
+1 --> 20
+2 --> Values.RefValue@7be50657
+
+--------------------------------------
+ExeStack:
+[print(heapRead heapRead a)]
+ID: 0
+SymTable:
+a --> Values.RefValue@668bd9f
+v --> Values.RefValue@2ae9bb64
+Out:
+FileTable:
+Heap:
+1 --> 20
+2 --> Values.RefValue@7be50657
+3 --> 30
+
+--------------------------------------
+ExeStack:
+ID: 0
+SymTable:
+a --> Values.RefValue@668bd9f
+v --> Values.RefValue@2ae9bb64
+Out:
+20
+FileTable:
+Heap:
+1 --> 20
+2 --> Values.RefValue@7be50657
+3 --> 30
+
+--------------------------------------

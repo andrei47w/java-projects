@@ -1,0 +1,260 @@
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc
+openRFile(varf)
+varf := "test.in"
+str varf]
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc
+openRFile(varf)
+varf := "test.in"]
+[str varf]
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc
+openRFile(varf)
+varf := "test.in"]
+SymTable:
+varf --> ""
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc
+openRFile(varf)]
+[varf := "test.in"]
+SymTable:
+varf --> ""
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc
+openRFile(varf)]
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc]
+[openRFile(varf)]
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)
+int varc]
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)]
+[int varc]
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)
+readFile(varf, varc)]
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)]
+[readFile(varf, varc)]
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)
+print(varc)]
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)]
+[print(varc)]
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)
+readFile(varf, varc)]
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)]
+[readFile(varf, varc)]
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)
+print(varc)]
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)]
+[print(varc)]
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+[closeRFile(varf)]
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+test.in --> java.io.BufferedReader@2b71fc7e
+Heap:
+
+--------------------------------------
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+Heap:
+
+--------------------------------------

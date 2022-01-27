@@ -1,0 +1,435 @@
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+[v := 10]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+[new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+[new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+[writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+[print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+ID: 0
+SymTable:
+Out:
+null
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0]
+[print(heapRead a)]
+ID: 0
+SymTable:
+Out:
+null
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0]
+ID: 0
+SymTable:
+Out:
+null
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+[v := 10]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+[new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+[new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+[writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+[print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+ID: 0
+SymTable:
+Out:
+null
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+[v := 10]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)
+new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+[new(v, 20)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)
+new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+[new(a, 22)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)
+writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+[writeH(a, 30)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)
+print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+[print(a)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[a := 0
+print(heapRead a)]
+ID: 0
+SymTable:
+Out:
+null
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(2)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+ID: 0
+SymTable:
+Out:
+2
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+[print(2)]
+ID: 0
+SymTable:
+Out:
+FileTable:
+Heap:
+
+--------------------------------------
+ExeStack:
+ID: 0
+SymTable:
+Out:
+2
+FileTable:
+Heap:
+
+--------------------------------------
